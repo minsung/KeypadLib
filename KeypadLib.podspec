@@ -14,14 +14,14 @@ Pod::Spec.new do |s|
   s.module_name = "KeypadLib"
 
   puts "version: #{s.version}"
-  s.preserve_paths = 'Framework/*.framework'
+  s.preserve_paths = 'Frameworks/*.framework'
   s.source = { :git => "https://github.com/minsung/KeypadLib.git" }
 
   s.default_subspec = 'Core'
 
   s.subspec 'Core' do |core|
-    core.vendored_frameworks = "Framework/KeypadLib.framework"
-#    core.resource = "SDK/Frameworks/ValuePotion.framework/ValuePotion.bundle"
+    core.vendored_frameworks = "Frameworks/KeypadLib.framework"
     core.frameworks = 'UIKit', 'Foundation'
   end
+  
 end
