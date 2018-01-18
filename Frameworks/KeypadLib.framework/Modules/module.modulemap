@@ -1,0 +1,11 @@
+framework module KeypadLib {
+  umbrella header "KeypadLib.h"
+
+  export *
+  module * { export * }
+}
+
+module KeypadLib.Swift {
+    header "KeypadLib-Swift.h"
+    requires objc
+}
